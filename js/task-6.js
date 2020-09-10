@@ -7,3 +7,29 @@
 
 // let input;
 // let total = 0;
+// 1 вары
+let input;
+let total = 0;
+//2создать цикл и  остановить цикл когда инпут равно null
+// через цикл do...whole
+// do {
+//   input = prompt();
+//   if (isNaN(input)) {
+//     alert("Было введено не число, попробуйте еще раз");
+//   } else {
+//     total += Number(input);
+//   }
+// } while (input !== null);
+
+// alert(`Общая сумма чисел равна ${total}`);
+// через цикл for
+for (; input !== null; ) {
+  input = prompt("Введите число:");
+  if (isNaN(input)) {
+    alert("Было введено не число, попробуйте еще раз");
+  } else {
+    total += Number(input);
+  }
+}
+alert(`Общая сумма чисел равна ${total}`);
+// сложить все введеные числа в тотал
